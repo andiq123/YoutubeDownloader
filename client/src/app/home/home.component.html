@@ -1,0 +1,15 @@
+<div class="container">
+    <ng-container>
+        <mat-card>
+            <mat-card-content>
+                <form (ngSubmit)=" submitLink()" #form="ngForm">
+                    <mat-form-field>
+                        <input matInput placeholder="Paste a link" name="search" [(ngModel)]="searchQuery" required>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit" [disabled]="!form.valid">Convert</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+        <!-- test -->
+    </ng-container>
+</div>
